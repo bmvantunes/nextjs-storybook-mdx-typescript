@@ -1,0 +1,19 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Button } from '@material-ui/core';
+import { action } from '@storybook/addon-actions';
+
+<Meta title="MDX|Button" component={Button} />
+
+ 
+With `MDX` we can define a story for `Button` right in the middle of our
+markdown documentation.
+ 
+<Preview>
+  <Story name="all button">
+    <Button variant="contained" color="primary" onClick={action('clicked')}>
+      <span role="img" aria-label="so cool">
+        😀 😎 👍 💯
+      </span>
+    </Button>
+  </Story>
+</Preview>
